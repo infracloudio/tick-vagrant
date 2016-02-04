@@ -13,3 +13,4 @@ sudo cp /vagrant/templates/chrono_config.tmpl /opt/chronograf/config.toml
 HOST=$(hostname);
 sudo sed -i "s|%HOSTNAME%|$HOST|g" /opt/chronograf/config.toml
 
+sudo service chronograf start
