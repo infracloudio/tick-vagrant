@@ -38,7 +38,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 			graf.vm.provider :virtualbox do |vb|
 				vb.customize ["modifyvm", :id, "--memory", CRGF_MEMORY]
 			end
-#			graf.vm.provision "shell", path: "scripts/configureChrono.sh"
+			graf.vm.provision "shell", path: "scripts/configureChrono.sh"
 		end
 	end	
 end
