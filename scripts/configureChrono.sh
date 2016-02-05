@@ -1,7 +1,7 @@
 sudo systemctl stop firewalld.service 
 sudo systemctl disable firewalld.service
 cd /vagrant/templates;
-if [[ ! -f /vagrant/templates/chronograf-0.10.0_rc2-1.x86_64.rpm ]] then
+if [ ! -f /vagrant/templates/chronograf-0.10.0_rc2-1.x86_64.rpm ]; then
 sudo wget https://s3.amazonaws.com/get.influxdb.org/chronograf/chronograf-0.10.0_rc2-1.x86_64.rpm
 fi
 
